@@ -1,0 +1,56 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int main() {
+    string password = "ALI";  // Define the password
+    string input_password;
+    string choice;
+
+    cout << "Please Enter the Password: ";
+    getline(cin, input_password);
+
+    if (input_password != password) {
+        cout << "You entered an Incorrect Password!" << endl;
+        return 0;
+    }
+
+    while (true) {
+        cout << endl;
+        cout << "=====================================||" << endl;
+        cout << "||                                  ||" << endl;
+        cout << "||                                  ||" << endl;
+        cout << "|| WELCOME TO MUHAMMAD MEDICAL STORE||" << endl;
+        cout << "||                                  ||" << endl;
+        cout << "||                                  ||" << endl;
+        cout << "||==================================||" << endl;
+
+        cout << "Choose any Option" << endl;
+        cout << "1. Buy medicines" << endl;
+        cout << "2. See medicines statistics" << endl;
+        cout << "3. Show amount earned today" << endl;
+        cout << "4. Exit" << endl;
+
+        cout << "Enter your choice: ";
+        getline(cin, choice);
+
+        if (choice == "1") {
+            // Buy medicines logic
+            // Implement functionality to buy different medicines
+        } else if (choice == "2") {
+            // Show medicines statistics logic
+            // Display quantity of each medicine sold
+        } else if (choice == "3") {
+            // Show amount earned logic
+            // Display the total amount earned today
+        } else if (choice == "4") {
+            // Exit the program
+            break;
+        } else {
+            cout << "Wrong input! Please enter a valid option." << endl;
+        }
+    }
+
+    return 0;
+}
